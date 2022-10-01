@@ -1,7 +1,14 @@
+:root{
+    --color-card-bg: hsl(0, 0%, 100%); /* white */
+    
+    --color-card-text: hsl(220, 15%, 55%); /* grayish blue*/
+    --color-card-title: hsl(218, 44%, 22%); /* dark blue */ 
 
+    --color-bg: hsl(212, 45%, 89%);  /* Light gray */
+}
 body{
     
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--color-bg);
     font-family:  "Outfit", sans-serif;
 }
 .card{
@@ -12,7 +19,7 @@ body{
     border-radius: 16px;
     align-items: center;
     justify-content: center;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-card-bg);
 }
 
 .card > h2, p {
@@ -22,13 +29,13 @@ body{
 }
 
 p{
-    color: #aaa;
+    color: var(--color-card-text);
     font-size: 15px;
 }
 
 h2{
     font-size: 24px;
-    color: hsl(218, 44%, 22%);
+    color: var(--color-card-title);
 }
 
 .card img{
